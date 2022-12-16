@@ -1,19 +1,39 @@
 //alert("hello world!");
-fetch("http://localhost:3000/toys") //fetching data
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (toys) {
-    console.log(toys);
-    let toysDetails = document.getElementById("Toys_container");
-    console.log(toysDetails);
-    for (let toy of toys) {
-      //console.log(toy.name);
-      toysDetails.innerHTML += `
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("http://localhost:3000/toys") //fetching data
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (toys) {
+      console.log(toys);
+      let toysDetails = document.getElementById("Toys_container");
+      console.log(toysDetails);
+      for (let toy of toys) {
+        //console.log(toy.name);
+        toysDetails.innerHTML += `
       <h3>${toy.name}</h3>
+      <p>likes:${toy.likes}</p>
       `;
-    }
+      }
+    });
+
+  document.getElementById("sbmt").addEventListener("click", function (e) {
+    let c = document.getElementById("cmnt").value;
+    document.getElementById("display").textContent = c;
+
+    e.preventDefault();
   });
+
+  document.getElementById("cancel").addEventListener("click", function (e) {
+    let d = document.getElementById("display");
+
+    e.preventDefault();
+  });
+  const h2 = document.getElementById("w");
+  h2.addEventListener("mouseenter", function (e) {
+    alert("your no.1 toy review store");
+  });
+});
 
 /*const options = {
   method: "GET",
