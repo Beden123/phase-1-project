@@ -23,18 +23,15 @@ Text editor e.g [Visual Studio Code] (https://code.visualstudio.com/studio)
 
 # Getting Files
 
--Fork the repo
--Create a new branch in your terminal (git checkout -b improve-feature)
--Make appropriate changes in file(s)
--Run the server to see the changes
--Add the changes and commit them (git commit -m "Improve App")
--Push to the branch (git push origin improve-app)
--Create a pull request
--Open the folder location on terminal
--Open the folder location on terminal and use the following command to run apps
-Clone this repository to a location in your file system. `git@github.com:Beden123/phase-1-project.git
-Open terminal command line then navigate to the root folder of the application. cd Phase-1-project
-Open index.html on your browser
+- Fork the repo
+- Create a new branch in your terminal (git checkout -b improve-feature)
+- Make appropriate changes in file(s)
+- Run the server to see the changes
+- Add the changes and commit them (git commit -m "Improve App")
+- Push to the branch (git push origin improve-app)
+- Create a pull request
+- Open the folder location on terminal
+- Open the folder location on terminal and use the following command to run apps
 
 # How To Run It
 
