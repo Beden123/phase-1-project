@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
   });
   const h2 = document.getElementById("w");
-  h2.addEventListener("mouseenter", function (e) {
+  h2.addEventListener("dblclick", function (e) {
     alert("your no.1 toy review store");
   });
 });
