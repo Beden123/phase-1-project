@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.getElementById("cancel").addEventListener("click", function (e) {
-    let d = document.getElementById("display");
+    let d = document.getElementById("display").remove("display");
 
     e.preventDefault();
   });
