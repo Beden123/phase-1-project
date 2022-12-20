@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
       }
     });
-
+  //Event to display comment on click
   document.getElementById("sbmt").addEventListener("click", function (e) {
     let c = document.getElementById("cmnt").value;
     document.getElementById("display").textContent = c;
 
     e.preventDefault();
   });
-
+  //Event to clear comment on click
   document.getElementById("cancel").addEventListener("click", function (e) {
     let d = document.getElementById("display").remove("display");
 
